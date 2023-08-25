@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>navbar example</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <nav class="main-navbar">
+            <div class="brand-name">
+                <img src="./assets/img/th-3511925476.jpg" alt="" class="navbar-logo" />
+            </div>
+            <form action="" class="nav-search-form">
+                <input type="search" name="" id="" placeholder="search items" value="mobile phones" />
+                <button class="btn">Search</button>
+            </form>
+            <ul class="menus">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portpholio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .main-navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                width: 100%;
+                box-shadow: 0px 0px 3px gray;
+                background-color: white;
+            }
+
+            .main-navbar>.brand-name>.navbar-logo {
+                height: 40px;
+                margin: 5px;
+            }
+
+            .main-navbar .nav-search-form {
+                display: flex;
+                border: 1px solid #f19933;
+            }
+
+            .main-navbar .nav-search-form>* {
+                border: none;
+            }
+
+            .main-navbar .nav-search-form>.btn {
+                background-color: #f19933;
+                padding: 10px 15px;
+                font-weight: 600;
+            }
+
+            .main-navbar .nav-search-form>input[type="search"] {
+                padding: 5px 10px;
+                width: 400px;
+            }
+
+            .main-navbar .nav-search-form>input[type="search"]:focus {
+                outline: none;
+            }
+
+            .main-navbar>.menus {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .main-navbar>.menus {
+                list-style: none;
+            }
+
+            .main-navbar>.menus li>a {
+                color: #171717;
+                text-decoration: none;
+                padding: 15px;
+                font-size: 1.2em;
+                text-transform: capitalize;
+            }
+
+            .main-navbar>.menus li>a:hover {
+                color: #f19933;
+                transition-duration: 300ms;
+                box-shadow: inset 0px -4px 0px 0px #f19933;
+            }
+        </style>
+    </body>
+
+</html>
