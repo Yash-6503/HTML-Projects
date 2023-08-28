@@ -2,56 +2,303 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            
-        }
-        *{
-            margin:0;
-            padding:0;
-        }
-        .nav{
-            margin-top: 0;
-            height:300Spx;
-            width:400px;
-            background-color: black;
-
-        }
-        .img{
-            align:center;
-            border-image-outset: 20px;
-            display:flex;
-            display:grid;
-            height:200px;
-        }
-
-        .hello{
-            margin-left: 400px;
-            margin-right: 200px;
-            
-            background-color: white;
-            height:400px;
-            
-        }
-    </style>
-</head>
-<body>
-    <section>
-        <div class="nav">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="contents">
+                <div class="menu"><i class="bi bi-list"></i></div>
+                <a href="" class="home">HOME</a>
+                <a href="" class="html">VEGETABLES</a>
+                <a href="" class="css">FRUITS</a>
+                <a href="" class="java">ORDERS</a>
+            </div>
+            <div class="nav-search">
+                <input type="search" class="Search" id="search" placeholder="Search items...." value="Mobile">
+                <button class="btn">Search</button>
+            </div>
+    
+            <div class="contact">
+                <select name="" class="list" id="list">
+                    <option value="">About Us</option>
+                    <option value="">Business</option>
+                    <option value="">Official</option>
+                    <option value="">Personal</option>
+                </select>
+            </div>
+    
+            <div class="socials">
+                <a href="" class="social-icons"><i class="bi bi-facebook"></i></a>
+                <a href="" class="social-icons"><i class="bi bi-twitter"></i></a>
+                <a href="" class="social-icons"><i class="bi bi-github"></i></a>
+                <a href="" class="social-icons"><i class="bi bi-youtube"></i></a>
+            </div>
+    
+        </div>
+    
+        <div class="c-body">
             <div class="img">
-                <img
-                    src="https://w0.peakpx.com/wallpaper/536/978/HD-wallpaper-white-lion-crown-black-anonymous-thumbnail.jpg" />
+    
+                <img src="https://img.freepik.com/premium-photo/supermarket-shopping-cart-full-veggies-is-there-generative-ai_28914-21887.jpg"
+                    alt="veg img" title="veg image" class="img2">
+                <img src="https://img.freepik.com/premium-photo/closeup-woman-shopping-fruits-vegetables-grocery-supermarket-store-generative-ai_401949-1018.jpg"
+                    alt="shop here" title="shop here" class="img1">
+    
+    
+            </div>
+    
+    
+        </div>
+        <div class="items">
+            <div class="product1">
+    
+                <img src="https://www.allthatgrows.in/cdn/shop/products/Spinach-All-Green_1600x.jpg?v=1598082959"
+                    alt="spinach" title="fresh spinach" height="200" class="img1">
+                <p style="text-align: center;"><b>Fresh Spinach</b></p>
+                <p style="text-align: center;"><b>Rs.50 INR.</b></p>
+            </div>
+            <div class="product2">
+                <img src="https://media.istockphoto.com/id/1258142863/photo/tomatoes-isolate-on-white-background-tomato-half-isolated-tomatoes-side-view-whole-cut-slice.jpg?s=612x612&w=0&k=20&c=LXNZwfkHS3LfKvOxUpzFf1iawID63DVYEjeM7fMK-Xk="
+                    alt="Tomato" title="Fresh Tomato" class="img2" height="180">
+                <p style="text-align: center;"><b>Tomato</b></p>
+                <p style="text-align: center;"><b>Rs.150/Kg INR.</b></p>
+            </div>
+            <div class="product3">
+                <img src="https://t4.ftcdn.net/jpg/03/69/98/49/360_F_369984944_mp5bcE534T45okjhprMta7z6ujQlaYXC.jpg"
+                    alt="brinjal" title="brinjal" class="img3" height="200">
+                <p style="text-align: center;"><b>Brinjal</b></p>
+                <p style="text-align: center;"><b>Rs.50/Kg INR.</b></p>
+            </div>
+            <div class="product4">
+                <img src="https://i0.wp.com/www.biodorf.com/wp-content/uploads/2019/05/Kottimera.jpg?fit=1080%2C1080&ssl=1"
+                    alt="corinder" title="corinder" class="img4" width="201">
+                <p style="text-align: center;"><b>Fresh Corinder</b></p>
+                <p style="text-align: center;"><b>Rs.80 INR.</b></p>
+            </div>
+    
+            <div class="product5">
+                <img src="https://shop.organicmandya.com/cdn/shop/products/1NjnqfBEDCZF8soVFB1u_0FH1FjKsrzLt_3a52a355-c738-41f7-bfd5-944049aa184a_1200x1200.jpg?v=1608550591"
+                    alt="carrot" title="carrot" class="img5" width="200">
+                <p style="text-align: center;"><b>Carrot</b></p>
+                <p style="text-align: center;"><b>Rs.70/Kg INR.</b></p>
             </div>
         </div>
-    </section>
-    <section>
-    <div class="hello">
-        <h2 style="color:yellow">hello</h2>
-    </div>
-   </section>
+        </div>
+    <style>
+      
+        .product4{
+            box-sizing: border-box;
+            background-color:burlywood;
+            border:2px solid white;
+            width:203px;
+            box-shadow: 5px 0px 10px;
+        }
+        .product5{
+            box-sizing: border-box;
+            background-color:darkcyan;
+            border:2px solid white;
+            width:203px;
+            box-shadow: 5px 0px 10px;
+        }
+        
+        .items{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap:10px;
+            height: 250px;
+            
+        }
+       
+        
+        .product2>.img2{
+            
+           
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            
+        }
+        .product1{
+            box-sizing: border-box;
+            background-color: darkgoldenrod;
+            border:2px solid white;
+            width:259px;
+            box-shadow: 5px 0px 10px;
+          
+        }
+        .product2{
+            background-color:yellow;
+            width:250px;
+            box-sizing: border-box;
+            border:2px solid white;
+            box-shadow: 5px 0px 10px;
 
+        }
+        .product3{
+           background-color:green;
+            width:302px;
+            box-sizing: border-box;
+            border:2px solid white;
+            box-shadow: 5px 0px 10px;
+        }
+        .menu{
+            color:white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            height: 50px;
+        }
+        .img{
+            display:flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            margin-bottom: 10px;;
+            border:5px solid black;
+           
+        }
+        .img>.img1{
+            display:flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        .img>.img2{
+            width: 50%;
+        }
+        .contact{
+            display:flex;
+            height: 30px;
+           margin-left: 150px;
+        }
+        .contact>.list{
+            border-radius: 5px;
+            padding: 5px 5px;
+            font-weight: 600;
+            text-align: center;
+            width: 150px;
+        }
+        .list:hover{
+            border:2px solid yellow;
+        }
+        .socials>.social-icons{
+            color:white;
+            justify-content: space-evenly;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        .container>.contents{
+            display:flex;
+            flex-direction: row;
+            text-decoration: none;
+            gap:10px;
+            margin-left: 30px;
+            
+        }
+
+        .container>.nav-search{
+            display:flex;
+            flex-direction: row;
+            text-decoration: none;
+           
+    
+        }
+        .nav-search>.Search{
+            width: 300px;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: 200px;
+            height: 40px;
+            padding: 10px 15px;
+            font-weight: 600;
+           
+        }
+        .Search:hover{
+            border: 2px solid yellow;
+        }
+         .btn:hover{
+            border: 2px solid yellow;
+        }
+        .nav-search>.btn{
+            border-radius: 20px;
+            width: 80px;
+            gap: 0px;
+            margin: 0;
+            padding: 10px 15px;
+            font-weight: 600;
+            color: red;
+        }
+
+        .contents>.home{
+            color:red;
+            text-decoration: none;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+        
+
+        }
+
+        .contents>.html{
+            color:red;
+            text-decoration: none;
+             height: 50px;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+        }
+        .contents>.css{
+            color:red;
+            text-decoration: none;
+             height: 50px;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+        }
+        .contents>.java{
+            color:red;
+            text-decoration: none;
+             height: 50px;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+        }
+        .container{
+            background-color: black;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            
+            
+           
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .html:hover{
+            background-color: white;
+        }
+        .home:hover{
+            background-color: white;
+        }
+        .css:hover{
+            background-color: white;
+        }
+        .java:hover{
+            background-color: white;
+        }
+    </style>
 </body>
 </html>
